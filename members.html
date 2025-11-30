@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:: ACCESS GRANTED :: Cyber Resources ::</title>
+<style>
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll due to effects */
+    background-color: #000000; /* Pure Black */
+    cursor: url('https://web.archive.org/web/20091027005423/http://geocities.com/Tokyo/Pagoda/4207/cursor_green.gif'), auto; /* Green Matrix Cursor */
+}
+
+/* Matrix Falling Code Effect */
+.matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2; /* Behind content */
+    pointer-events: none;
+    opacity: 0.2; /* Subtle effect */
+}
+
+.matrix-column {
+    position: absolute;
+    width: 15px; /* Width of a character */
+    white-space: pre;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #00FF00; /* Matrix Green */
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100%); opacity: 0; }
+    1% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 1; }
+}
+
+/* Scanline Overlay Effect */
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        rgba(0, 0, 0, 0.2) 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: -1; /* Above matrix, below content */
+    opacity: 0.5;
+}
+
+/* Blinking Cursor Effect */
+.blink-cursor {
+    animation: blinker 1s step-end infinite;
+}
+
+@keyframes blinker {
+    from, to { visibility: hidden; }
+    50% { visibility: visible; }
+}
+
+/* Blinking Text Effect */
+.blink {
+    animation: blink-text 1s linear infinite;
+}
+
+@keyframes blink-text {
+    0%   { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Glowing Text */
+.glow-text {
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+/* Marquee Styling for better integration */
+marquee {
+    border: 1px solid #00FF00;
+    padding: 2px;
+    background-color: #003300; /* Darker green for contrast */
+    margin-bottom: 5px;
+}
+</style>
+</head>
+<body bgcolor="#000000" text="#00FF00" link="#00FFFF" vlink="#00FF00" alink="#FF0000">
+
+<!-- Matrix Falling Code Background -->
+<div class="matrix-bg" id="matrixBackground"></div>
+<!-- Scanline Overlay -->
+<div class="scanlines"></div>
+
+<center>
+<table width="90%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#000000">
+    <tr>
+        <td colspan="2" align="center" style="padding: 10px;">
+            <!-- ASCII Art Header -->
+            <pre style="color: #00FF00; font-family: 'Courier New', Lucida Console, monospace; text-shadow: 0 0 10px #00FF00;">
+  _  _ ____ _  _ ____ ____ ___ _ ____ _ _  _ ____ ____
+  |\/| |___ |\ | |__| |___  |  | |__| | |\ | |___ [__
+  |  | |___ | \| |  | |___  |  | |  | | | \| |___ ___]
+                                                                        </pre>
+            <font face="Courier New, Lucida Console, monospace" size="5" color="#00FF00" class="glow-text">
+                <b class="blink">:: ACCESS GRANTED ::</b> <br>
+                <marquee behavior="scroll" direction="left" scrollamount="5" width="80%">
+                    <font color="#00FF00" face="Courier New, Lucida Console, monospace" size="4" class="glow-text">
+                        SYSTEM ONLINE // DISPLAYING CYBER RESOURCES // KNOWLEDGE IS POWER //
+                    </font>
+                </marquee>
+            </font>
+            <hr size="1" width="90%" color="#00FF00" noshade>
+        </td>
+    </tr>
+    <tr>
+        <!-- Left Navigation Column -->
+        <td width="180" valign="top" bgcolor="#000000" style="padding: 10px; border-right: 1px solid #00FF00;">
+            <table width="100%" border="1" cellspacing="0" cellpadding="5" bordercolor="#00FF00" bgcolor="#003300">
+                <tr>
+                    <td align="center">
+                        <font face="Courier New, Lucida Console, monospace" size="3" color="#FFFF00" class="glow-text">
+                            <b>:: SYSTEM MENU ::</b>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <font face="Courier New, Lucida Console, monospace" size="2">
+                            <a href="index.html" class="glow-text">HOME_BASE</a>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <font face="Courier New, Lucida Console, monospace" size="2">
+                            <a href="about-us.html" class="glow-text">ABOUT_THE_GROUP</a>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                         <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <font face="Courier New, Lucida Console, monospace" size="2">
+                            <a href="members.html" class="glow-text">OUR_ELITE_MEMBERS</a>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" bgcolor="#00FF00">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <font face="Courier New, Lucida Console, monospace" size="2" color="#000000">
+                            <b><a href="resources.html" class="glow-text" style="color:#000000;">CYBER_RESOURCES</a></b>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <!-- NEW_PAGE: guestbook | Sign The Logbook -->
+                        <font face="Courier New, Lucida Console, monospace" size="2">
+                            <a href="guestbook.html" class="glow-text">SIGN_THE_LOGBOOK</a>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <!-- NEW_PAGE: downloads | Data Downloads -->
+                        <font face="Courier New, Lucida Console, monospace" size="2">
+                            <a href="downloads.html" class="glow-text">DATA_DOWNLOADS</a>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/bullet.gif" width="15" height="15" border="0" alt="Bullet">
+                        <!-- NEW_PAGE: links | Nexus Links -->
+                        <font face="Courier New, Lucida Console, monospace" size="2">
+                            <a href="links.html" class="glow-text">NEXUS_LINKS</a>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-top: 10px;">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/fire.gif" width="30" height="30" alt="Fire GIF">
+                        <br><br>
+                        <font face="Webdings, Wingdings, monospace" size="5" color="#FF0000" class="blink">
+                            &#x2620; <!-- Skull Symbol -->
+                        </font>
+                        <br>
+                        <font face="Courier New, Lucida Console, monospace" size="1" color="#FF0000">
+                            <b>WARNING: <br>Unauthorized Access <br>Detected & Denied</b>
+                        </font>
+                        <br><br>
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/security.gif" width="88" height="31" alt="Security GIF">
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <!-- Right Content Column: Cyber Resources -->
+        <td valign="top" bgcolor="#000000" style="padding: 10px;">
+            <table width="100%" border="1" cellspacing="0" cellpadding="10" bordercolor="#00FF00" bgcolor="#003300">
+                <tr>
+                    <td align="center">
+                        <font face="Courier New, Lucida Console, monospace" size="5" color="#00FF00" class="glow-text">
+                            <b>&gt;&gt; CYBER RESOURCES &lt;&lt;</b><br>
+                            <font size="2" color="#00FFFF">_//_ TOOLS, DOCUMENTATION, AND KNOWLEDGE _//_</font>
+                        </font>
+                        <hr size="1" width="80%" color="#00FF00" noshade>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <font face="Courier New, Lucida Console, monospace" size="3" color="#00FF00">
+                            Access our curated collection of digital assets. From essential tools to critical documentation, these resources are vital for any operative navigating the cyber landscape.
+                        </font>
+                        <br><br>
+                        <hr size="1" width="100%" color="#00FF00" noshade>
+
+                        <!-- Resource Category: Essential Tools -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#000000" style="margin-bottom: 15px; border: 1px dashed #00FF00;">
+                            <tr>
+                                <td colspan="2" bgcolor="#003300" align="center">
+                                    <font face="Courier New, Lucida Console, monospace" size="4" color="#FFFF00" class="glow-text">
+                                        <b>:: ESSENTIAL OPERATIVE TOOLS ::</b>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/gear.gif" width="20" height="20" border="0" alt="Gear">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; Nmap (Network Mapper)</b><br>
+                                        A powerful open-source tool for network exploration and security auditing.<br>
+                                        <a href="https://nmap.org/" target="_blank" class="glow-text" style="color:#00FFFF;">[DOWNLOAD/INFO]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/gear.gif" width="20" height="20" border="0" alt="Gear">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; Wireshark (Packet Analyzer)</b><br>
+                                        The world's foremost network protocol analyzer. Observe network traffic in real-time.<br>
+                                        <a href="https://www.wireshark.org/" target="_blank" class="glow-text" style="color:#00FFFF;">[DOWNLOAD/INFO]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/gear.gif" width="20" height="20" border="0" alt="Gear">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; GnuPG (GNU Privacy Guard)</b><br>
+                                        A complete and free implementation of the OpenPGP standard.<br>
+                                        <a href="https://gnupg.org/" target="_blank" class="glow-text" style="color:#00FFFF;">[DOWNLOAD/INFO]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Resource Category: Critical Documentation -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#000000" style="margin-bottom: 15px; border: 1px dashed #00FF00;">
+                            <tr>
+                                <td colspan="2" bgcolor="#003300" align="center">
+                                    <font face="Courier New, Lucida Console, monospace" size="4" color="#FFFF00" class="glow-text">
+                                        <b>:: CRITICAL DOCUMENTATION ::</b>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/doc.gif" width="20" height="20" border="0" alt="Document">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; RFC 793 - Transmission Control Protocol</b><br>
+                                        The foundational specification for TCP. Understand the basics.<br>
+                                        <a href="https://tools.ietf.org/html/rfc793" target="_blank" class="glow-text" style="color:#00FFFF;">[READ_DOCUMENT]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/doc.gif" width="20" height="20" border="0" alt="Document">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; The Cuckoo's Egg by Clifford Stoll</b><br>
+                                        A real-life spy thriller about tracking a hacker through early networks.<br>
+                                        <a href="https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)" target="_blank" class="glow-text" style="color:#00FFFF;">[INFO_PAGE]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Resource Category: Community & Forums -->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#000000" style="margin-bottom: 15px; border: 1px dashed #00FF00;">
+                            <tr>
+                                <td colspan="2" bgcolor="#003300" align="center">
+                                    <font face="Courier New, Lucida Console, monospace" size="4" color="#FFFF00" class="glow-text">
+                                        <b>:: COMMUNITY & FORUMS ::</b>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/chat.gif" width="20" height="20" border="0" alt="Chat">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; Old School IRC Channels</b><br>
+                                        Connect with fellow operatives on #hackers and #cyberpunk on EFnet.<br>
+                                        <a href="https://en.wikipedia.org/wiki/EFnet" target="_blank" class="glow-text" style="color:#00FFFF;">[IRC_INFO]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20" valign="top" align="center">
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/chat.gif" width="20" height="20" border="0" alt="Chat">
+                                </td>
+                                <td valign="top">
+                                    <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                                        <b>&gt; Phrack Magazine Archives</b><br>
+                                        Historical collection of underground hacking articles and manifestos.<br>
+                                        <a href="http://phrack.org/archives.html" target="_blank" class="glow-text" style="color:#00FFFF;">[READ_ARCHIVES]</a>
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr size="1" width="100%" color="#00FF00" noshade>
+                        <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                            &gt;&gt; END OF RESOURCE LIST &lt;&lt;<br>
+                            &gt;&gt; CONTINUOUSLY UPDATING DATABASE &lt;&lt;
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <center>
+                <font face="Courier New, Lucida Console, monospace" size="2" color="#00FFFF">
+                    <a href="mailto:admin@thecoolestgroup.com" class="glow-text">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/email.gif" width="20" height="15" border="0" alt="Email"> Contact System Admin
+                    </a>
+                </font>
+            </center>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" style="padding: 10px; border-top: 1px solid #00FF00;">
+            <hr size="1" width="90%" color="#00FF00" noshade>
+            <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                &gt; SYSTEM LOGS: <span id="lastUpdatedDate"></span> &lt;
+            </font>
+            <br>
+            <font face="Courier New, Lucida Console, monospace" size="1" color="#00FFFF">
+                01010101 01001110 01000100 01000101 01010010 00100000 01000011 01001111 01001110 01010011 01010100 01010010 01010101 01000011 01010100 01001001 01001111 01001110
+            </font>
+            <br>
+            <img src="https://www.counter12.com/img-Cd6Aw8dC6Yd6cxAd-77.gif" alt="Hit Counter">
+            <br>
+            <font face="Courier New, Lucida Console, monospace" size="1" color="#FF0000" class="blink">
+                WARNING: This site may contain traces of awesome. Proceed with caution.
+            </font>
+        </td>
+    </tr>
+</table>
+</center>
+
+</body>
+</html>

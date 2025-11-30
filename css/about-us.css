@@ -1,0 +1,50 @@
+/* Minimal CSS for scanlines and body margin */
+body {
+    margin: 0;
+    background-color: #000000; /* Pure black background */
+    color: #00FF00; /* Matrix green text */
+    font-family: "Courier New", Lucida Console, monospace;
+    overflow-x: hidden; /* Prevent horizontal scrollbar from marquee */
+    position: relative;
+}
+
+/* Scanline effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        transparent 0px,
+        rgba(0, 255, 0, 0.05) 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Text glow effect */
+.glow {
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+/* Blinking cursor effect */
+.blink-cursor {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+/* Blinking text effect */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+blink {
+    animation: blink 1s step-end infinite;
+}

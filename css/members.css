@@ -1,0 +1,36 @@
+/* Minimal CSS as most styling is inline or via HTML attributes */
+/* This block is mainly for the dynamic effects that require CSS */
+
+/* Matrix Falling Code Effect - defined in HTML <style> block for retro authenticity */
+/* Scanline Overlay Effect - defined in HTML <style> block for retro authenticity */
+/* Blinking Cursor Effect - defined in HTML <style> block for retro authenticity */
+/* Blinking Text Effect - defined in HTML <style> block for retro authenticity */
+/* Glowing Text - defined in HTML <style> block for retro authenticity */
+
+/* Additional minor styles if absolutely necessary and not achievable with HTML attributes */
+body {
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll due to effects */
+    background-color: #000000; /* Pure Black - fallback */
+    cursor: url('https://web.archive.org/web/20091027005423/http://geocities.com/Tokyo/Pagoda/4207/cursor_green.gif'), auto; /* Green Matrix Cursor */
+}
+
+a {
+    text-decoration: none;
+    color: #00FFFF; /* Default link color */
+}
+
+a:hover {
+    color: #00FF00; /* Hover color */
+    text-shadow: 0 0 5px #00FF00;
+}
+
+/* Ensure glow effect applies to links as well */
+.glow-text a {
+    color: inherit; /* Inherit color from parent glow-text */
+    text-shadow: inherit; /* Inherit shadow from parent glow-text */
+}
+.glow-text a:hover {
+    color: #00FF00; /* Override hover color for links within glow-text */
+    text-shadow: 0 0 8px #00FF00, 0 0 12px #00FF00;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SYSTEM_ACCESS: ABOUT_US</title>
+<style>
+/* Minimal CSS for scanlines and body margin */
+body {
+    margin: 0;
+    background-color: #000000; /* Pure black background */
+    color: #00FF00; /* Matrix green text */
+    font-family: "Courier New", Lucida Console, monospace;
+    overflow-x: hidden; /* Prevent horizontal scrollbar from marquee */
+    position: relative;
+}
+
+/* Scanline effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        transparent 0px,
+        rgba(0, 255, 0, 0.05) 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Text glow effect */
+.glow {
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+}
+
+/* Blinking cursor effect */
+.blink-cursor {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+/* Blinking text effect */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+blink {
+    animation: blink 1s step-end infinite;
+}
+</style>
+</head>
+<body bgcolor="#000000" text="#00FF00">
+
+<!-- Main Page Layout Table -->
+<table width="90%" border="1" cellpadding="5" cellspacing="0" align="center" bgcolor="#003300" bordercolor="#00FF00" style="border-collapse: collapse;">
+    <tr>
+        <!-- Header Cell -->
+        <td colspan="2" bgcolor="#000000" bordercolor="#00FF00" style="padding: 10px; text-align: center;">
+            <pre class="glow" style="margin: 0; padding: 0;">
+                <font face="Courier New, Lucida Console, monospace" size="5" color="#00FF00">
+ _   _                               _           _       _
+| | | | ___  _   _  ___  _ __   __ _| |__   ___ | |_ ___| |
+| |_| |/ _ \| | | |/ _ \| '_ \ / _` | '_ \ / _ \| __/ _ \ |
+|  _  | (_) | |_| | (_) | | | | (_| | |_) | (_) | ||  __/ |
+|_| |_|\___/ \__, |\___/|_| |_|\__,_|_.__/ \___/ \__\___|_|
+             |___/
+                <font color="#FF0000">:: INITIATING DATA SEQUENCE: ABOUT_US ::</font>
+                </font>
+            </pre>
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                <font face="Courier New, Lucida Console, monospace" color="#00FFFF" size="2">
+                    01010101 01000001 01000010 01001111 01010101 01010100 00100000 01010101 01010011 00100000 01000001 01000011 01000011 01000101 01010011 01010011 00100000 01000111 01010010 01000001 01001110 01010100 01000101 01000100 00101110
+                </font>
+            </marquee>
+        </td>
+    </tr>
+    <tr>
+        <!-- Navigation Sidebar -->
+        <td width="20%" valign="top" bgcolor="#000000" bordercolor="#00FF00" style="padding: 10px; border-right: 1px solid #00FF00;">
+            <p><font face="Courier New, Lucida Console, monospace" size="3" color="#00FF00" class="glow"><b>:: SYSTEM MENU ::</b></font></p>
+            <hr size="1" width="100%" color="#00FF00" noshade>
+            <p>&nbsp;</p>
+            <p><a href="#" data-page="index"><font face="Courier New, Lucida Console, monospace" size="3" color="#00FFFF">> HOME_NETWORK</font></a></p>
+            <p><a href="#" data-page="about-us"><font face="Courier New, Lucida Console, monospace" size="3" color="#00FF00">> ABOUT_US <blink class="blink-cursor">_</blink></font></a></p>
+            <p><!-- NEW_PAGE: members | System Members --><a href="#" data-page="members"><font face="Courier New, Lucida Console, monospace" size="3" color="#FF0000">> SYSTEM_MEMBERS</font></a></p>
+            <p><!-- NEW_PAGE: downloads | Data Downloads --><a href="#" data-page="downloads"><font face="Courier New, Lucida Console, monospace" size="3" color="#00FFFF">> DATA_DOWNLOADS</font></a></p>
+            <p><!-- NEW_PAGE: links | Nexus Links --><a href="#" data-page="links"><font face="Courier New, Lucida Console, monospace" size="3" color="#00FFFF">> NEXUS_LINKS</font></a></p>
+            <p><!-- NEW_PAGE: guestbook | Logbook --><a href="#" data-page="guestbook"><font face="Courier New, Lucida Console, monospace" size="3" color="#FF0000">> LOGBOOK_ENTRY</font></a></p>
+            <p>&nbsp;</p>
+            <hr size="1" width="100%" color="#00FF00" noshade>
+            <p align="center">
+                <img src="https://web.archive.org/web/20091027003009/http://geocities.com/SiliconValley/Peaks/1376/anigif.gif" width="88" height="31" alt="Under Construction">
+            </p>
+            <p align="center">
+                <font face="Courier New, Lucida Console, monospace" size="1" color="#00FF00">
+                    <blink>[ SYSTEM ONLINE ]</blink><br>
+                    <img src="https://web.archive.org/web/20091027002958/http://geocities.com/siliconvalley/peaks/1376/ani-code.gif" width="31" height="32" alt="Code">
+                </font>
+            </p>
+        </td>
+
+        <!-- Main Content Area -->
+        <td width="80%" valign="top" bgcolor="#000000" bordercolor="#00FF00" style="padding: 10px;">
+            <p align="center">
+                <font face="Courier New, Lucida Console, monospace" size="4" color="#00FFFF" class="glow">
+                    <pre>
+  _____ ____  _   _ _____ _____ ____
+ |  ___/ ___|| | | | ____|_   _/ ___|
+ | |_  \___ \| |_| |  _|   | || |
+ |  _|  ___) |  _  | |___  | || |___
+ |_|   |____/|_| |_|_____| |_| \____|
+                    </pre>
+                </font>
+                <font face="Courier New, Lucida Console, monospace" size="3" color="#00FF00">
+                    <blink class="blink-cursor">_</blink> ESTABLISHED M.M.I <blink class="blink-cursor">_</blink>
+                </font>
+            </p>
+
+            <hr size="1" width="80%" color="#00FF00" noshade>
+
+            <p>
+                <font face="Courier New, Lucida Console, monospace" size="3" color="#00FF00">
+                    <span class="glow">>> INIT: ABOUT_GROUP.LOG</span><br>
+                    <br>
+                    Welcome to the core data matrix of <font color="#00FFFF">The Coolest Group</font>. We are not just a collective; we are a decentralized network of elite digital architects, code sorcerers, and system navigators. Our mission: to transcend the mundane, to decode the universe, and to propagate the ultimate truth through the digital ether.
+                    <br><br>
+                    <font color="#00FFFF">STATUS: OPERATIONAL</font><br>
+                    <font color="#00FFFF">GROUP_SYNCHRONIZATION: 100%</font><br>
+                    <font color="#00FFFF">THREAT_LEVEL: LOW (for now)</font>
+                </font>
+            </p>
+
+            <p>
+                <font face="Courier New, Lucida Console, monospace" size="3" color="#FF0000">
+                    <span class="glow">>> WARNING: ACCESS_RESTRICTED_DATA_BELOW</span>
+                </font>
+            </p>
+
+            <table width="95%" border="1" cellpadding="3" cellspacing="0" align="center" bgcolor="#000000" bordercolor="#00FF00">
+                <tr>
+                    <td bgcolor="#003300"><font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00"><b>PROTOCOL</b></font></td>
+                    <td bgcolor="#003300"><font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00"><b>DESCRIPTION</b></font></td>
+                </tr>
+                <tr>
+                    <td><font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">0101_CODENAME</font></td>
+                    <td><font face="Courier New, Lucida Console, monospace" size="2" color="#00FFFF">"CYBER_NOMADS"</font></td>
+                </tr>
+                <tr>
+                    <td><font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">0110_OBJECTIVE</font></td>
+                    <td><font face="Courier New, Lucida Console, monospace" size="2" color="#00FFFF">To explore, to innovate, to hack the planet.</font></td>
+                </tr>
+                <tr>
+                    <td><font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">0111_ETHOS</font></td>
+                    <td><font face="Courier New, Lucida Console, monospace" size="2" color="#00FFFF">Knowledge is power. Code is freedom. Anarchy is order.</font></td>
+                </tr>
+            </table>
+
+            <p align="center">
+                <img src="https://web.archive.org/web/20090803154832/http://geocities.com/SiliconValley/Lakes/3503/code.gif" alt="Falling Code" width="100" height="100">
+            </p>
+
+            <p>
+                <font face="Courier New, Lucida Console, monospace" size="3" color="#00FF00">
+                    <span class="glow">>> END_OF_FILE: ABOUT_GROUP.LOG</span><br>
+                    <br>
+                    <font color="#00FFFF">PROCESSING... <img src="https://web.archive.org/web/20090803154832/http://geocities.com/SiliconValley/Lakes/3503/spinner.gif" width="16" height="16"></font>
+                    <br>
+                    <font color="#FF0000">DISCONNECTING IN 5... 4... 3... 2... 1...</font>
+                </font>
+            </p>
+
+            <hr size="1" width="80%" color="#00FF00" noshade>
+
+            <p align="center">
+                <font face="Courier New, Lucida Console, monospace" size="2" color="#00FF00">
+                    <blink>:: SYSTEM FOOTER ::</blink><br>
+                    Last Modified: <script language="JavaScript">
+                        <!--
+                        var date = new Date(document.lastModified);
+                        document.write(date.toLocaleDateString());
+                        //-->
+                    </script> |
+                    <a href="mailto:admin@coolestgroup.net"><font color="#00FFFF">ADMIN_CONTACT</font></a>
+                </font>
+            </p>
+            <p align="center">
+                <img src="https://www.counter12.com/img-Cd6Aw8dC6Yd6cxAd-77.gif" alt="Visitor Counter"><br>
+                <font face="Courier New, Lucida Console, monospace" size="1" color="#00FF00">
+                    YOU ARE VISITOR_ID: <blink class="blink-cursor">_</blink>
+                </font>
+            </p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

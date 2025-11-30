@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>&#960; &#960; &#960; THE COOLEST GROUP: CYBER RESOURCES &#960; &#960; &#960;</title>
+    <style type="text/css">
+        /* Basic Reset */
+        body {
+            margin: 0;
+            background-color: #000000; /* Pure black */
+            cursor: url('https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/green_cursor.gif'), auto; /* Green hacker cursor */
+            overflow-x: hidden; /* Prevent horizontal scroll for wide elements */
+        }
+
+        /* Scanline Overlay Effect */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 255, 0, 0.05) 0 1px,
+                transparent 1px 2px
+            ),
+            repeating-linear-gradient(
+                90deg,
+                rgba(0, 255, 0, 0.02) 0 1px,
+                transparent 1px 2px
+            );
+        }
+
+        /* Text Glow Effect */
+        .glow {
+            text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00, 0 0 20px #00FF00;
+        }
+
+        /* Flicker Animation */
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .flicker {
+            animation: flicker 1s infinite alternate;
+        }
+
+        /* Blinking Cursor for Terminal Look (if <blink> is not supported) */
+        @keyframes terminal-blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .terminal-cursor {
+            animation: terminal-blink 1s step-end infinite;
+        }
+
+        /* Matrix Rain effect (simple, CSS-only) */
+        .matrix-rain-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://web.archive.org/web/20010609074026/http://www.geocities.com/SiliconValley/Pines/5084/matrix.gif'); /* A simple falling code GIF */
+            background-repeat: repeat;
+            opacity: 0.1; /* Subtle background */
+        }
+
+        /* Hyperlink Styling for the hacker theme */
+        a {
+            color: #00FF00; /* Default link color: matrix green */
+            text-decoration: none; /* No underline by default */
+        }
+        a:hover {
+            color: #00FFFF; /* Brighter green/cyan on hover */
+            text-decoration: underline; /* Underline on hover for feedback */
+            text-shadow: 0 0 5px #00FFFF; /* Subtle glow on hover */
+        }
+    </style>
+</head>
+<body bgcolor="#000000">
+
+    <!-- Matrix Rain Background Effect -->
+    <div class="matrix-rain-bg"></div>
+    <!-- Scanline Overlay -->
+    <div class="scanlines"></div>
+
+    <center>
+    <!-- Main Page Layout Table -->
+    <table width="90%" border="1" cellpadding="5" cellspacing="0" bgcolor="#000000" bordercolor="#00FF00" style="border-collapse: collapse;">
+
+        <!-- Header Row -->
+        <tr>
+            <td align="center" valign="top" bgcolor="#000000" style="border-bottom: 1px solid #00FF00;">
+                <!-- Main Header ASCII Art -->
+                <pre class="glow" style="color: #00FF00; font-family: 'Courier New', Lucida Console, monospace; font-size: 14px; line-height: 1.0;">
+<font size="5">
+010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+</font><font size="6">
+   _______ _____ ____  ____  _      ___  ____  _____ ____  _______ ____  
+  / ___|_   _|  _ \|  _ \| |    / _ \|  _ \| ____|  _ \|_   _|  _ \| __ ) 
+ | |     | | | |_) | |_) | |   | | | | |_) | |__ | |_) | | | | |_) |  _ \ 
+ | |     | | |  _ <|  _ <| |   | | | |  _ <|  __||  _ <  | | | |  _ <| |_) |
+ | |____ | |_| |_) | |_) | |___| |_| | |_) | |___| |_) | | | | |_) |____/ 
+  \____||_____|____/|____/|_____|\___/|____/|_____|____/  |_| |____/|______|
+</font><font size="5">
+101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010
+</font>
+                </pre>
+                <hr size="1" width="80%" color="#00FF00" noshade>
+                <!-- Marquee for System Status -->
+                <p>
+                    <marquee behavior="scroll" direction="left" scrollamount="4" style="width: 100%; border: 1px solid #00FF00; padding: 2px;">
+                        <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2">
+                            <span class="flicker">SYSTEM ONLINE</span> | <span class="glow">ACCESS GRANTED</span> | <span class="flicker">INITIATING PROTOCOLS</span> | DECRYPTING DATA | <font color="#FF0000">WARNING: UNKNOWN ENTITY DETECTED (0xDEADBEEF)</font> | <span class="glow">SECURE CONNECTION ESTABLISHED</span> | PROTOCOL ECHO: ACTIVE
+                        </font>
+                    </marquee>
+                </p>
+                <br>
+            </td>
+        </tr>
+
+        <!-- Navigation Row -->
+        <tr>
+            <td align="center" bgcolor="#003300" style="border-bottom: 1px solid #00FF00;">
+                <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#003300">
+                    <tr>
+                        <td align="center">
+                            <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="3">
+                                <span class="glow">[ <a href="index.html" style="color: #00FF00; text-decoration: none;">HOME</a> ]</span> &nbsp;&nbsp;&nbsp;
+                                <span class="glow">[ <a href="about-us.html" style="color: #00FF00; text-decoration: none;">ABOUT US</a> ]</span> &nbsp;&nbsp;&nbsp;
+                                <span class="glow">[ <a href="members.html" style="color: #00FF00; text-decoration: none;">MEMBERS</a> ]</span> &nbsp;&nbsp;&nbsp;
+                                <span class="glow">[ <a href="resources.html" style="color: #00FFFF; text-decoration: underline; text-shadow: 0 0 5px #00FFFF;">RESOURCES</a> ]</span> &nbsp;&nbsp;&nbsp; <!-- Highlighted for current page -->
+                                <!-- NEW_PAGE: downloads | Data Downloads -->
+                                <span class="glow">[ <a href="downloads.html" style="color: #00FF00; text-decoration: none;">DOWNLOADS</a> ]</span> &nbsp;&nbsp;&nbsp;
+                                <!-- NEW_PAGE: links | Nexus Links -->
+                                <span class="glow">[ <a href="links.html" style="color: #00FF00; text-decoration: none;">LINKS</a> ]</span> &nbsp;&nbsp;&nbsp;
+                                <!-- NEW_PAGE: guestbook | Sign The Logbook -->
+                                <span class="glow">[ <a href="guestbook.html" style="color: #00FF00; text-decoration: none;">GUESTBOOK</a> ]</span>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Main Content Area (Nested Table for Sidebar and Main Content) -->
+        <tr>
+            <td align="center" valign="top" bgcolor="#000000" style="border-bottom: 1px solid #00FF00;">
+                <br>
+                <table width="98%" border="0" cellpadding="10" cellspacing="0" bgcolor="#000000" style="border-collapse: collapse;">
+                    <tr>
+                        <!-- Sidebar Column -->
+                        <td width="25%" valign="top" bgcolor="#003300" style="border: 1px solid #00FF00; padding-right: 5px;">
+                            <p align="left">
+                                <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2">
+                                    <span class="glow">> SYSTEM STATUS<br></span>
+                                    > CPU: 99% IDLE<br>
+                                    > MEM: 64MB USED<br>
+                                    > NET: ONLINE<br>
+                                    > FIREWALL: ACTIVE<br>
+                                    <br>
+                                    <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/cpu.gif" width="80" height="80" border="0" alt="CPU spinning"><br>
+                                    <br>
+                                    <span class="flicker">0101010101010101</span><br>
+                                    <span class="glow">1010101010101010</span><br>
+                                    <span class="flicker">0011001100110011</span><br>
+                                    <br>
+                                    <marquee behavior="scroll" direction="up" scrollamount="2" height="80">
+                                        <font color="#00FF00" size="1">
+                                            _INITIATING_LOGIN_<br>
+                                            _AUTHENTICATING_<br>
+                                            _PASSWORD_ACCEPTED_<br>
+                                            _WELCOME_USER_<br>
+                                            _ENCRYPTED_SESSION_<br>
+                                        </font>
+                                    </marquee>
+                                </font>
+                            </p>
+                        </td>
+
+                        <!-- Main Content Column -->
+                        <td width="75%" valign="top" bgcolor="#000000" style="border: 1px solid #00FF00; padding-left: 15px;">
+                            <!-- Resources Page Content -->
+                            <p align="left">
+                                <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="4">
+                                    <span class="glow flicker">[[ CYBER RESOURCES DATABASE ]]</span><br><br>
+                                    &gt; This section contains a curated collection of tools, guides, and knowledge fragments essential for navigating the digital frontier. Access granted for authorized personnel.
+                                    <br><br>
+                                    <hr size="1" width="90%" color="#00FF00" noshade align="left">
+                                    <br>
+
+                                    <!-- Section: Hacking Tools -->
+                                    <p align="left">
+                                        <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="3">
+                                            <span class="glow"><b>&gt; [0x01] HACKING TOOLS & UTILITIES</b></span><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;[ Essential software for network analysis, vulnerability scanning, and secure communication. ]<br><br>
+                                        </font>
+                                    </p>
+                                    <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#000000" bordercolor="#003300" style="border-collapse: collapse;">
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/tool.gif" width="16" height="16" alt="Tool icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">Packet Interceptor v2.1</a> - Real-time network traffic analysis.</font></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/terminal.gif" width="16" height="16" alt="Terminal icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">PortScan 3000</a> - Identify open ports on remote systems.</font></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/lock.gif" width="16" height="16" alt="Lock icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">CryptoShell 1.5</a> - Advanced encryption/decryption utility.</font></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <center><font size="2" color="#00FF00">01001000 01100001 01100011 01101011 01101001 01101110 01100111 00100000 01010100 01101111 01101111 01101100 01110011</font></center>
+                                    <br>
+                                    <hr size="1" width="90%" color="#003300" noshade align="left">
+                                    <br>
+
+                                    <!-- Section: Security Guides -->
+                                    <p align="left">
+                                        <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="3">
+                                            <span class="glow"><b>&gt; [0x02] OPERATIONAL SECURITY PROTOCOLS</b></span><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;[ Guides and best practices for maintaining anonymity and digital hygiene. ]<br><br>
+                                        </font>
+                                    </p>
+                                    <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#000000" bordercolor="#003300" style="border-collapse: collapse;">
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/document.gif" width="16" height="16" alt="Document icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">OpSec Fundamentals</a> - The basics of staying hidden online.</font></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/shield.gif" width="16" height="16" alt="Shield icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">Advanced Firewall Configuration</a> - Lock down your perimeter.</font></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/brain.gif" width="16" height="16" alt="Brain icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">Social Engineering Countermeasures</a> - Protect yourself from manipulation.</font></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <center><font size="2" color="#00FF00">01010011 01100101 01100011 01110101 01110010 01101001 01110100 01111001 00100000 01000111 01110101 01101001 01100100 01100101 01110011</font></center>
+                                    <br>
+                                    <hr size="1" width="90%" color="#003300" noshade align="left">
+                                    <br>
+
+                                    <!-- Section: Coding & Development -->
+                                    <p align="left">
+                                        <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="3">
+                                            <span class="glow"><b>&gt; [0x03] CODING & DEVELOPMENT ARCHIVES</b></span><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;[ Tutorials and language references for digital creation and manipulation. ]<br><br>
+                                        </font>
+                                    </p>
+                                    <table width="100%" border="0" cellpadding="5" cellspacing="0" bgcolor="#000000" bordercolor="#003300" style="border-collapse: collapse;">
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/code.gif" width="16" height="16" alt="Code icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">Perl Scripting 101</a> - Automate your digital tasks.</font></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/program.gif" width="16" height="16" alt="Program icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">C++ for System Exploitation</a> - Low-level programming for control.</font></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20" align="center" style="border: 1px dotted #003300;"><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/html.gif" width="16" height="16" alt="HTML icon"></td>
+                                            <td style="border: 1px dotted #003300;"><font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2"><a href="javascript:void(0);" class="glow">HTML 3.2 Web Design</a> - Crafting your digital presence (like this site!).</font></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <center><font size="2" color="#00FF00">01000011 01101111 01100100 01101001 01101110 01100111 00100000 00100006 00100000 01000100 01100101 01110110 01100101 01101100 01101111 01110000 01101101 01100101 01101110 01110100</font></center>
+                                    <br>
+                                    <hr size="1" width="90%" color="#00FF00" noshade align="left">
+                                    <br>
+
+                                    <!-- Call to Action / Other Sections -->
+                                    <p align="left">
+                                        <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="3">
+                                            <span class="glow">CMD > echo "Expanding knowledge base..."</span><br>
+                                            <br>
+                                            &gt; We are continuously updating our repository with new intelligence. Check back frequently for new data streams.
+                                            <br><br>
+                                            <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/download.gif" width="40" height="40" border="0" alt="Download icon">
+                                            <span class="glow"><a href="downloads.html" style="color: #00FF00; text-decoration: none;">[ ACCESS DATA DOWNLOADS ]</a></span>
+                                            <br><br>
+                                            &gt; Discover other nodes in the network. <span class="terminal-cursor">_</span>
+                                            <br><br>
+                                            <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/webring.gif" width="40" height="40" border="0" alt="Webring icon">
+                                            <span class="glow"><a href="links.html" style="color: #00FF00; text-decoration: none;">[ EXPLORE NEXUS LINKS ]</a></span>
+                                            <br><br>
+                                            <center><img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/underconstruction.gif" width="88" height="31" border="0" alt="Under Construction"></center>
+                                        </font>
+                                    </p>
+                                </font>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+            </td>
+        </tr>
+
+        <!-- Footer Row -->
+        <tr>
+            <td align="center" valign="top" bgcolor="#000000" style="border-top: 1px solid #00FF00;">
+                <hr size="1" width="80%" color="#00FF00" noshade>
+                <p>
+                    <font face="Courier New, Lucida Console, monospace" color="#00FF00" size="2">
+                        <span class="glow">SYSTEM FOOTER ></span> Last Updated: <script type="text/javascript">document.write(new Date().toLocaleDateString());</script><br>
+                        <span class="flicker">TOTAL ACCESSES:</span> <img src="https://www.counter12.com/img-Cd6Aw8dC6Yd6cxAd-77.gif" alt="Hit Counter"><br>
+                        <br>
+                        <span class="glow">[ <a href="mailto:admin@coolestgroup.com" style="color: #00FF00; text-decoration: none;">CONTACT ADMIN</a> ]</span>
+                        <br><br>
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/best_viewed_ie.gif" width="88" height="31" border="0" alt="Best viewed in IE">
+                        <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/netscape_button.gif" width="88" height="31" border="0" alt="Best viewed in Netscape">
+                    </font>
+                </p>
+                <br>
+                <img src="https://web.archive.org/web/20090829045853im_/http://www.geocities.com/SouthBeach/Marina/4942/animated_line.gif" width="100%" height="10" border="0" alt="animated line">
+            </td>
+        </tr>
+    </table>
+    </center>
+
+</body>
+</html>
